@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: html_head(pageTitle='Adicionar Produto')" />
+<body>
+	<div th:replace="fragments :: header"></div>
+	<div align="center">	
+		<h1>Adicionar novo produto</h1>
+		<br/>
+		<form action="#" th:action="@{/save}" th:object="${product}" method="post">
+			<table border="0" cellpadding="10">
+				<tr>
+					<td>Nome Produto:</td>
+					<td><input type="text" th:field="*{nome}" class="form-control" /></td>
+				</tr>
+				<tr>
+					<td>Preço:</td>
+					<td><input type="text" th:field="*{preco}" class="form-control" /></td>
+				</tr>				
+				<tr>
+					<td>Quantidade:</td>
+					<td><input type="text" th:field="*{quantidade}" class="form-control" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><button type="submit" class="btn btn-primary">Save</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
