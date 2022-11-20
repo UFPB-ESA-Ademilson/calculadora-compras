@@ -1,7 +1,7 @@
 package com.ufpb.calculadoracompras.security;
 
-import net.codejava.user.UserDetailsServiceImpl;
-import net.codejava.user.UserService;
+import com.ufpb.calculadoracompras.user.UserDetailsServiceImpl;
+import com.ufpb.calculadoracompras.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
