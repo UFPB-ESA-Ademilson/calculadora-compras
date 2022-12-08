@@ -20,7 +20,7 @@ public class UserService {
 			
 			repo.save(newUser);
 			
-			System.out.println("Created new user: " + username);
+			System.out.println("Novo usuário criado: " + username);
 		}
 		
 	}
